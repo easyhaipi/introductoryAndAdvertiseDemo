@@ -15,6 +15,10 @@
 		8A5B16721D6ED38200D9E773 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A5B16701D6ED38200D9E773 /* LaunchScreen.storyboard */; };
 		8A5B167D1D6ED38200D9E773 /* AdvertiseDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5B167C1D6ED38200D9E773 /* AdvertiseDemoTests.m */; };
 		8A5B16881D6ED38200D9E773 /* AdvertiseDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5B16871D6ED38200D9E773 /* AdvertiseDemoUITests.m */; };
+		8A5B169A1D6ED38F00D9E773 /* AdvertiseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5B16971D6ED38F00D9E773 /* AdvertiseHelper.m */; };
+		8A5B169B1D6ED38F00D9E773 /* AdvertiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5B16991D6ED38F00D9E773 /* AdvertiseView.m */; };
+		8A5B16A31D6EEE1200D9E773 /* introductoryPagesHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5B16A01D6EEE1200D9E773 /* introductoryPagesHelper.m */; };
+		8A5B16A41D6EEE1200D9E773 /* introductoryPagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5B16A21D6EEE1200D9E773 /* introductoryPagesView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,16 @@
 		8A5B16831D6ED38200D9E773 /* AdvertiseDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdvertiseDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A5B16871D6ED38200D9E773 /* AdvertiseDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdvertiseDemoUITests.m; sourceTree = "<group>"; };
 		8A5B16891D6ED38200D9E773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A5B16961D6ED38F00D9E773 /* AdvertiseHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertiseHelper.h; sourceTree = "<group>"; };
+		8A5B16971D6ED38F00D9E773 /* AdvertiseHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertiseHelper.m; sourceTree = "<group>"; };
+		8A5B16981D6ED38F00D9E773 /* AdvertiseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertiseView.h; sourceTree = "<group>"; };
+		8A5B16991D6ED38F00D9E773 /* AdvertiseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertiseView.m; sourceTree = "<group>"; };
+		8A5B169C1D6ED3E700D9E773 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		8A5B169D1D6ED49000D9E773 /* NotificationContants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationContants.h; sourceTree = "<group>"; };
+		8A5B169F1D6EEE1200D9E773 /* introductoryPagesHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = introductoryPagesHelper.h; sourceTree = "<group>"; };
+		8A5B16A01D6EEE1200D9E773 /* introductoryPagesHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = introductoryPagesHelper.m; sourceTree = "<group>"; };
+		8A5B16A11D6EEE1200D9E773 /* introductoryPagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = introductoryPagesView.h; sourceTree = "<group>"; };
+		8A5B16A21D6EEE1200D9E773 /* introductoryPagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = introductoryPagesView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +115,8 @@
 		8A5B16611D6ED38200D9E773 /* AdvertiseDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8A5B169E1D6EEE1200D9E773 /* IntroductoryPages */,
+				8A5B16951D6ED38F00D9E773 /* AdvertiseHelper */,
 				8A5B16651D6ED38200D9E773 /* AppDelegate.h */,
 				8A5B16661D6ED38200D9E773 /* AppDelegate.m */,
 				8A5B16681D6ED38200D9E773 /* ViewController.h */,
@@ -110,6 +126,7 @@
 				8A5B16701D6ED38200D9E773 /* LaunchScreen.storyboard */,
 				8A5B16731D6ED38200D9E773 /* Info.plist */,
 				8A5B16621D6ED38200D9E773 /* Supporting Files */,
+				8A5B169C1D6ED3E700D9E773 /* PrefixHeader.pch */,
 			);
 			path = AdvertiseDemo;
 			sourceTree = "<group>";
@@ -117,6 +134,7 @@
 		8A5B16621D6ED38200D9E773 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8A5B169D1D6ED49000D9E773 /* NotificationContants.h */,
 				8A5B16631D6ED38200D9E773 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +156,28 @@
 				8A5B16891D6ED38200D9E773 /* Info.plist */,
 			);
 			path = AdvertiseDemoUITests;
+			sourceTree = "<group>";
+		};
+		8A5B16951D6ED38F00D9E773 /* AdvertiseHelper */ = {
+			isa = PBXGroup;
+			children = (
+				8A5B16961D6ED38F00D9E773 /* AdvertiseHelper.h */,
+				8A5B16971D6ED38F00D9E773 /* AdvertiseHelper.m */,
+				8A5B16981D6ED38F00D9E773 /* AdvertiseView.h */,
+				8A5B16991D6ED38F00D9E773 /* AdvertiseView.m */,
+			);
+			path = AdvertiseHelper;
+			sourceTree = "<group>";
+		};
+		8A5B169E1D6EEE1200D9E773 /* IntroductoryPages */ = {
+			isa = PBXGroup;
+			children = (
+				8A5B169F1D6EEE1200D9E773 /* introductoryPagesHelper.h */,
+				8A5B16A01D6EEE1200D9E773 /* introductoryPagesHelper.m */,
+				8A5B16A11D6EEE1200D9E773 /* introductoryPagesView.h */,
+				8A5B16A21D6EEE1200D9E773 /* introductoryPagesView.m */,
+			);
+			path = IntroductoryPages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +312,11 @@
 			files = (
 				8A5B166A1D6ED38200D9E773 /* ViewController.m in Sources */,
 				8A5B16671D6ED38200D9E773 /* AppDelegate.m in Sources */,
+				8A5B16A31D6EEE1200D9E773 /* introductoryPagesHelper.m in Sources */,
+				8A5B16A41D6EEE1200D9E773 /* introductoryPagesView.m in Sources */,
 				8A5B16641D6ED38200D9E773 /* main.m in Sources */,
+				8A5B169B1D6ED38F00D9E773 /* AdvertiseView.m in Sources */,
+				8A5B169A1D6ED38F00D9E773 /* AdvertiseHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +459,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = /Users/easy_qingsong163com/Documents/myGitHub/AdvertiseDemo/AdvertiseDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = AdvertiseDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tbc.AdvertiseDemo;
@@ -426,6 +471,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = /Users/easy_qingsong163com/Documents/myGitHub/AdvertiseDemo/AdvertiseDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = AdvertiseDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tbc.AdvertiseDemo;
